@@ -25,20 +25,22 @@
   <main class="contact-container">
     <h1 class="contact-title">Get In Touch 📪</h1>
     <form class="contact-form"
-        action="https://formspree.io/f/movwljwb"
-        method="POST"
-    >
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Your name" required />
+      action="https://formspree.io/f/movwljwb"
+      method="POST"
+      onsubmit="return validateForm()">
+  
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Your name" required />
 
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="you@example.com" required />
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
-      <label for="message">Message</label>
-      <textarea id="message" placeholder="Say hello!" required></textarea>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" placeholder="Say hello!" required></textarea>
 
-      <button type="submit" class="btn-send">Send Message</button>
-    </form>
+  <button type="submit" class="btn-send">Send Message</button>
+</form>
+
 
     <div class="social-icons">
   <a href="https://linkedin.com" target="_blank" class="icon-wrapper pastel-green">
