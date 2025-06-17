@@ -70,7 +70,8 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 15px; /* disesuaikan agar tidak terlalu nempel */
+  padding-top: 0px;
+  padding-botton: 20px;/* disesuaikan agar tidak terlalu nempel */
   padding-left: 2rem;
   padding-right: 2rem;
   overflow: hidden;
