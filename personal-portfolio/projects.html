@@ -3,9 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects - Luminer-J</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Projects Pastel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0fdf4;
+    color: #1e3a34;
+    line-height: 1.6;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;   /* lebih kecil dari default */
+    margin-bottom: 1.5rem;
+    color: #0f172a;
+  }
+
+  .projects-section {
+    padding: 1rem 1.5rem; /* atas-bawah 1rem, kiri-kanan 1.5rem */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .project-card {
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .project-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #134e4a;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #334155;
+  }
+
+  .badge-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .projects-section .badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 530;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    color: #ffffff;
+  }
+
+  /* Warna pastel untuk badge */
+  .bg-pink { background-color: #fbcfe8; }
+  .bg-blue { background-color: #a5f3fc; }
+  .bg-yellow { background-color: #fef9c3; }
+  .bg-mint { background-color: #bbf7d0; }
+  .bg-purple { background-color: #e9d5ff; }
+  .bg-peach { background-color: #fed7aa; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .project-card {
+      padding: 1.5rem;
+    }
+
+    .project-card h3 {
+      font-size: 1.25rem;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+    }
+
+    .projects-section {
+      padding: 2rem 1.25rem;
+    }
+  }
+</style>
+
+  
 </head>
 <body>
   <div class="top-strip"></div>
@@ -21,8 +126,67 @@
     </nav>
   </header>
 
+  <main class="projects-section">
+    <h1>Projects</h1>
+    <div class="projects-grid">
+  <div class="project-card bg-pink">
+    <h3>ploggo</h3>
+    <p>A gamified fitness and sustainability app using ML and GPS to classify litter and reward users.</p>
+    <div class="badge-group">
+      <span class="badge">React Native</span>
+      <span class="badge">PostgreSQL</span>
+      <span class="badge">TypeScript</span>
+    </div>
+  </div>
+
+  <div class="project-card bg-blue">
+    <h3>alt+ctrl+view</h3>
+    <p>Chrome extension that uses AI to generate alt text and improve accessibility.</p>
+    <div class="badge-group">
+      <span class="badge">JavaScript</span>
+      <span class="badge">Chrome Extension</span>
+    </div>
+  </div>
+
+  <div class="project-card bg-yellow">
+    <h3>webvitals</h3>
+    <p>Analytics tool to monitor and improve web performance.</p>
+    <div class="badge-group">
+      <span class="badge">React</span>
+      <span class="badge">TailwindCSS</span>
+      <span class="badge">REST APIs</span>
+    </div>
+  </div>
+
+  <div class="project-card bg-mint">
+    <h3>be clean</h3>
+    <p>Support app with daily challenges, progress badges, and community engagement.</p>
+    <div class="badge-group">
+      <span class="badge">React</span>
+      <span class="badge">Node.js</span>
+    </div>
+  </div>
+
+  <div class="project-card bg-purple">
+    <h3>study smarter</h3>
+    <p>Flashcard app using spaced repetition and voice input.</p>
+    <div class="badge-group">
+      <span class="badge">Next.js</span>
+      <span class="badge">Supabase</span>
+    </div>
+  </div>
+
+  <div class="project-card bg-peach">
+    <h3>cookpal</h3>
+    <p>AI-powered recipe suggestion app based on available ingredients.</p>
+    <div class="badge-group">
+      <span class="badge">Python</span>
+      <span class="badge">Flask</span>
+    </div>
+  </div>
+</div>
   </main>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
